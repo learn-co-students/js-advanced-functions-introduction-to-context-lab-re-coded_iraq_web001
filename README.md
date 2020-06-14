@@ -1,4 +1,4 @@
-# JavaScript Advanced Functions: Introduction to Context
+ # JavaScript Advanced Functions: Introduction to Context
 
 ## Learning Goals
 
