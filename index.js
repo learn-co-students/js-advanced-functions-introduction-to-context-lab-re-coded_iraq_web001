@@ -1,3 +1,4 @@
+// Your code here
 let createEmployeeRecord = function(row){
     return {
         firstName: row[0],
@@ -57,7 +58,7 @@ let wagesEarnedOnDate = function(employee, dateSought){
     return parseFloat(rawWage.toString())
 }
 
-let wagesFor = function(employee){
+let allWagesFor = function(employee){
     let eligibleDates = employee.timeInEvents.map(function(e){
         return e.date
     })
@@ -77,6 +78,6 @@ let findEmployeeByFirstName = function(srcArray, firstName) {
 
 let calculatePayroll = function(arrayOfEmployeeRecords){
     return arrayOfEmployeeRecords.reduce(function(memo, rec){
-        return memo + wagesFor(rec)
+        return memo + allWagesFor(rec)
     }, 0)
 }
